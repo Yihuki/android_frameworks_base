@@ -48,7 +48,7 @@ public class NfcTile extends QSTile<QSTile.BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.DESO;
+        return MetricsEvent.XOSP;
     }
 
     @Override
