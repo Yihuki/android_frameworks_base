@@ -3845,6 +3845,14 @@ public final class Settings {
         public static final String KEY_MENU_LONG_PRESS_ACTION = "key_menu_long_press_action";
 
         /**
+         * Whether to allow notifications with the screen on or DayDreams.
+         * The value is boolean (1 or 0). Default will always be false.
+         * @hide
+         */
+        public static final String NOTIFICATION_LIGHT_SCREEN_ON =
+                "notification_light_screen_on_enable";    
+        
+        /**
          * Action to perform when the menu key is double-tapped.
          * (Default can be configured via config_doubleTapOnHardwareMenuBehavior)
          * (See KEY_HOME_LONG_PRESS_ACTION for valid values)
@@ -4079,6 +4087,7 @@ public final class Settings {
             LOCK_TO_APP_ENABLED,
             NOTIFICATION_SOUND,
             ACCELEROMETER_ROTATION,
+            NOTIFICATION_LIGHT_SCREEN_ON,
             STATUS_BAR_BATTERY_STYLE,
             STATUS_BAR_SHOW_BATTERY_PERCENT
         };
