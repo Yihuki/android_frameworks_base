@@ -21,4 +21,19 @@
          location permissions, and must obtain user content through other means -->
     <string-array name="config_enabledPreinstalledCarrierApps" translatable="false" />
 
+    <!-- Defines the shutdown options shown in the reboot dialog. -->
+    <array name="shutdown_reboot_options" translatable="false">
+        <item>@string/reboot_reboot</item>
+        <item>@string/reboot_soft</item>
+        <item>@string/reboot_recovery</item>
+        <item>@string/reboot_bootloader</item>
+    </array>
+
+    <!-- Defines the shutdown actions passed to the kernel. -->
+    <string-array name="shutdown_reboot_actions" translatable="false">
+        <item></item>
+        <item>soft_reboot</item>
+        <item>recovery</item>
+        <item>bootloader</item>
+     </string-array>
 </resources>
