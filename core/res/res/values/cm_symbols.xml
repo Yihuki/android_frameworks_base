@@ -145,4 +145,7 @@
 
     <!--Exposed style for power menu -->
     <java-symbol type="style" name="Theme.Power.Dialog" />
+
+    <!-- Use alternative way to blur lockscreen -->
+    <java-symbol type="bool" name="config_use_stackblur" />
 </resources>
