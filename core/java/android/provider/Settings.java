@@ -4084,6 +4084,21 @@ public final class Settings {
         @Deprecated
         public static final String DEVICE_PROVISIONED = Global.DEVICE_PROVISIONED;
 
+        /** Navbar height
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+
+        /** Navbar height in landscape
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
+
+	/** Navbar width
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_WIDTH = "navigation_bar_width";
+        
         /**
          * @deprecated Use {@link android.provider.Settings.Global#HTTP_PROXY} instead
          */
