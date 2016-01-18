@@ -14,20 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <java-symbol type="bool" name="config_singleStageCameraKey" />
-    <java-symbol type="integer" name="config_longPressOnMenuBehavior" />
-    <java-symbol type="integer" name="config_longPressOnAppSwitchBehavior" />
-
-    <!-- Package Manager -->
-    <java-symbol type="array" name="config_disabledComponents" />
-    <java-symbol type="array" name="config_forceEnabledComponents" />
-
-    <!-- Usb drive persistent notification -->
-    <java-symbol type="bool" name="config_persistUsbDriveNotification" />
-
-    <!-- Carrier Apps -->
-    <java-symbol type="array" name="config_enabledPreinstalledCarrierApps" />
+    <!-- A list of pre-installed applications that will be treated as carrier apps,
+         regardless of the SIM inserted. These applications will be granted phone and
+         location permissions, and must obtain user content through other means -->
+    <string-array name="config_enabledPreinstalledCarrierApps" translatable="false" />
 
 </resources>
