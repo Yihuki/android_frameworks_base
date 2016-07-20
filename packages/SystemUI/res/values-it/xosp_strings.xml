@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Xperia Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+   <!-- On The Go -->
+   <string name="onthego_notif_ticker">On-The-Go attivato</string>
+   <string name="onthego_notif_title">On-The-Go è attivo</string>
+   <string name="onthego_notif_stop">Interrompi</string>
+   <string name="onthego_notif_options">Opzioni</string>
+   <string name="onthego_notif_error">Impossibile avviare On-The-Go</string>
+   <string name="onthego_notif_restart">Riavviare On-The-Go</string>
+   <string name="onthego_notif_camera_changed">Modalità fotocamera cambiata</string>
+   <string name="onthego_transparency">Trasparenza</string>
+   <string name="onthego_front_camera">Usa fotocamera anteriore</string>
+   <string name="onthego_service_toggle">Riavvia automaticamente il servizio</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_torch">Torcia</string>
+
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_torch">Torcia</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_camera">Camera</string>
+
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_camera">Camera</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_screenshot">ScreenShot</string>
+
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_screenshot">ScreenShot</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_expand">Modalità immersiva</string>
+
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_expand">Modalità immersiva</string>
+    
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_screenrecord">ScreenRecord</string>
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_screenrecord">ScreenRecord</string>
+
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_killtask">Kill Task</string>
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_killtask">Termina Task</string>
+    <!-- Kill app toast -->
+    <string name="app_killed_message">App Terminate</string>
+
+    <!-- 4G LTE switch -->
+    <string name="show_fourg_title">Mostra 4G invece di LTE</string>
+    <string name="show_fourg_summary">Sostituisce l\'indicatore LTE nella barra di stato con il 4G.</string>
+    <string name="statusbar_tuner_category_title">Nascondi elementi dalla barra di stato</string>
+    
+</resources>
