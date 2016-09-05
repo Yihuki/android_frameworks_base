@@ -2217,7 +2217,15 @@ message MetricsEvent {
     // END OF AOSP CONSTANTS
 
     //XOSP
-
     XOSP = 412;
+    
+    // BEGIN PA CONSTANTS
+    // Settings -> Backup & Reset -> Feature Preferences
+    FEATURE_PREFERENCES = 500;
+
+    // Immersive mode
+    QS_IMMERSIVE = 501;
+    QS_IMMERSIVE_DETAILS = 502;
+    QS_IMMERSIVE_TOGGLE = 503;
   }
 }
