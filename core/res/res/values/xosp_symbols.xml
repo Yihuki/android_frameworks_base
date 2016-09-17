@@ -66,4 +66,9 @@
     <java-symbol type="id" name="shutdown_message" />
     <java-symbol type="id" name="shutdown_progress" />
 
+    <!-- Button Brightness -->
+    <java-symbol type="integer" name="config_buttonBrightnessSettingMinimum" />
+    <java-symbol type="integer" name="config_buttonBrightnessSettingMaximum" />
+    <java-symbol type="integer" name="config_buttonBrightnessSettingDefault" />
+
 </resources> 
