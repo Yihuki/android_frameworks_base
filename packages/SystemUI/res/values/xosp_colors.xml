@@ -25,4 +25,7 @@
     <color name="somc_keyguard_theme_color_solid_foreground">#ffffffff</color>
     <color name="somc_keyguard_theme_color_solid_foreground_inverse">#ff000000</color>
 
+    <!-- Status bar battery level text color -->
+    <color name="status_bar_battery_level_text_color">#ffffff</color>
+
 </resources> 
