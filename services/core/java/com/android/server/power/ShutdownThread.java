@@ -157,7 +157,7 @@ public final class ShutdownThread extends Thread {
         String[] defaultActions = context.getResources().getStringArray(
                 com.android.internal.R.array.config_globalActionsList);
         for (int i = 0; i < defaultActions.length; i++) {
-            if (defaultActions[i].equals("reboot")) {
+            if (defaultActions[i].equals("restart")) {
                 showRebootOption = true;
                 break;
             }
