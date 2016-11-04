@@ -82,7 +82,7 @@
     <color name="material_grey_600">@color/xosp_midnight_palette_600</color>
     <color name="material_grey_300">@color/xosp_midnight_palette_300</color>
     <color name="material_grey_100">@color/xosp_midnight_palette_100</color>
-    <color name="material_grey_50">@color/xosp_midnight_palette_50</color>
+    <color name="material_grey_50">#fffafafa</color>
 
     <color name="material_deep_teal_50">@color/xosp_blue_palette_50</color>
     <color name="material_deep_teal_100">@color/xosp_blue_palette_100</color>
