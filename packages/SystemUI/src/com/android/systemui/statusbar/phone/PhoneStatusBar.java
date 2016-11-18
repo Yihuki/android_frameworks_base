@@ -44,6 +44,7 @@ import android.app.StatusBarManager;
 import android.content.BroadcastReceiver;
 import android.content.ComponentCallbacks2;
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -129,7 +130,7 @@ import com.android.keyguard.KeyguardHostView.OnDismissAction;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.KeyguardUpdateMonitorCallback;
 import com.android.keyguard.ViewMediatorCallback;
-import com.android.server.pm.UserContentObserver;
+import com.android.systemui.UserContentObserver;
 import com.android.systemui.AutoReinflateContainer;
 import com.android.systemui.AutoReinflateContainer.InflateListener;
 import com.android.systemui.BatteryMeterView;
@@ -141,6 +142,7 @@ import com.android.systemui.Prefs;
 import com.android.systemui.R;
 import com.android.systemui.SystemUIFactory;
 import com.android.systemui.classifier.FalsingLog;
+import com.android.systemui.classifier.FalsingManager;
 import com.android.systemui.doze.DozeHost;
 import com.android.systemui.doze.DozeLog;
 import com.android.systemui.keyguard.KeyguardViewMediator;
@@ -374,6 +376,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     // settings
     private QSPanel mQSPanel;
 
+    //XOSP NavBarSwitch
+    private boolean mNavBarSwitch;
+
     // top bar
     BaseStatusBarHeader mHeader;
     protected KeyguardStatusBarView mKeyguardStatusBar;
@@ -484,7 +489,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             mNavBarSwitch = Settings.System.getIntForUser(resolver,
                     Settings.System.XOSP_NAVBAR_SWITCH, 0, UserHandle.USER_CURRENT) == 1;
             
-            mNavigationBarView.updateNavBarIcons(mNavBarSwitch);
+            if (mNavigationBarView != null)
+                mNavigationBarView.updateNavBarIcons(mNavBarSwitch);
         }
     }
 
