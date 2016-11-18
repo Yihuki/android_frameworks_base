@@ -99,6 +99,8 @@ public class NavigationBarView extends LinearLayout {
     private boolean mUseCarModeUi = false;
     private boolean mInCarMode = false;
     private boolean mDockedStackExists;
+    
+    private boolean mNavBarSwitch;
 
     private final SparseArray<ButtonDispatcher> mButtonDisatchers = new SparseArray<>();
     private Configuration mConfiguration;
@@ -287,6 +289,14 @@ public class NavigationBarView extends LinearLayout {
         mHomeCarModeIcon = ctx.getDrawable(R.drawable.ic_sysbar_home_carmode);
     }
 
+    public boolean updateNavBarIcons(boolean state){
+        mNavBarSwitch=state;
+        if(mNavBarSwitch)
+            return true;
+        else
+            return false;
+    }
+    
     private void updateIcons(Context ctx, Configuration oldConfig, Configuration newConfig) {
         if (oldConfig.orientation != newConfig.orientation
                 || oldConfig.densityDpi != newConfig.densityDpi) {
@@ -305,6 +315,31 @@ public class NavigationBarView extends LinearLayout {
 
             if (ALTERNATE_CAR_MODE_UI) {
                 updateCarModeIcons(ctx);
+            }
+
+            if(mNavBarSwitch==false){
+                mBackIcon = ctx.getDrawable(R.drawable.ic_sysbar_back);
+                mBackLandIcon = mBackIcon;
+                mBackAltIcon = ctx.getDrawable(R.drawable.ic_sysbar_back_ime);
+                mBackAltLandIcon = mBackAltIcon;
+
+                mHomeDefaultIcon = ctx.getDrawable(R.drawable.ic_sysbar_home);
+                mRecentIcon = ctx.getDrawable(R.drawable.ic_sysbar_recent);
+                mMenuIcon = ctx.getDrawable(R.drawable.ic_sysbar_menu);
+                mImeIcon = ctx.getDrawable(R.drawable.ic_ime_switcher_default);
+                updateCarModeIcons(ctx);
+            }
+            else
+            {
+                mBackIcon = ctx.getDrawable(R.drawable.ic_sysbar_second_back);
+                mBackLandIcon = mBackIcon;
+                mBackAltIcon = ctx.getDrawable(R.drawable.ic_sysbar_second_back_ime);
+                mBackAltLandIcon = mBackAltIcon;
+
+                mHomeDefaultIcon = ctx.getDrawable(R.drawable.ic_sysbar_second_home);
+                mRecentIcon = ctx.getDrawable(R.drawable.ic_sysbar_second_recent);
+                mMenuIcon = ctx.getDrawable(R.drawable.ic_sysbar_menu);
+                mImeIcon = ctx.getDrawable(R.drawable.ic_ime_switcher_default);
             }
         }
     }

@@ -3665,6 +3665,13 @@ public final class Settings {
           * @hide
           */
          public static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+        
+        /**
+         * This restore back the old NavBar icons for users who don't like the new N ones
+         * @hide
+         */
+
+         public static final String XOSP_NAVBAR_SWITCH = "xosp_navbar_switch";
 
         /**
          * Value for button brightness.
@@ -6467,7 +6474,8 @@ public final class Settings {
          * @hide
          */
         public static final String DOUBLE_TAP_TO_WAKE = "double_tap_to_wake";
-
+        
+         
         /**
          * The current assistant component. It could be a voice interaction service,
          * or an activity that handles ACTION_ASSIST, or empty which means using the default
