@@ -36,7 +36,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
     private static final int LINE_ANIMATION_DURATION_X = 133;
     private static final int RETRACT_ANIMATION_DURATION = 300;
     private static final int DIAMOND_ANIMATION_DURATION = 200;
-    private static final int HALO_ANIMATION_DURATION = 100;
 
     private static final int DOTS_RESIZE_DURATION = 200;
     private static final int HOME_RESIZE_DURATION = 83;
@@ -46,7 +45,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
 
     private static final float DIAMOND_DOTS_SCALE_FACTOR = 0.8f;
     private static final float DIAMOND_HOME_SCALE_FACTOR = 0.625f;
-    private static final float HALO_SCALE_FACTOR = 0.47619048f;
 
     private KeyButtonView mHome;
 
@@ -64,7 +62,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
     private View mGreen;
     private View mYellow;
     private View mWhite;
-    private View mHalo;
 
     private View mTop;
     private View mRight;
@@ -292,16 +289,10 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
         set.add(this.getScaleAnimatorY(this.mGreen, 1.0f, OpaLayout.DOTS_RESIZE_DURATION, this.mDotsFullSizeInterpolator));
         final Animator scaleAnimatorX = this.getScaleAnimatorX(this.mWhite, 1.0f, OpaLayout.HOME_REAPPEAR_DURATION, this.mFastOutSlowInInterpolator);
         final Animator scaleAnimatorY = this.getScaleAnimatorY(this.mWhite, 1.0f, OpaLayout.HOME_REAPPEAR_DURATION, this.mFastOutSlowInInterpolator);
-        final Animator scaleAnimatorX2 = this.getScaleAnimatorX(this.mHalo, 1.0f, OpaLayout.HOME_REAPPEAR_DURATION, this.mFastOutSlowInInterpolator);
-        final Animator scaleAnimatorY2 = this.getScaleAnimatorY(this.mHalo, 1.0f, OpaLayout.HOME_REAPPEAR_DURATION, this.mFastOutSlowInInterpolator);
         scaleAnimatorX.setStartDelay(OpaLayout.HOME_REAPPEAR_ANIMATION_OFFSET);
         scaleAnimatorY.setStartDelay(OpaLayout.HOME_REAPPEAR_ANIMATION_OFFSET);
-        scaleAnimatorX2.setStartDelay(OpaLayout.HOME_REAPPEAR_ANIMATION_OFFSET);
-        scaleAnimatorY2.setStartDelay(OpaLayout.HOME_REAPPEAR_ANIMATION_OFFSET);
         set.add(scaleAnimatorX);
         set.add(scaleAnimatorY);
-        set.add(scaleAnimatorX2);
-        set.add(scaleAnimatorY2);
         this.getLongestAnim((set)).addListener((Animator.AnimatorListener)new AnimatorListenerAdapter() {
             public void onAnimationEnd(final Animator animator) {
                 OpaLayout.this.mCurrentAnimators.clear();
@@ -327,8 +318,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
         set.add(this.getScaleAnimatorY(this.mRight, OpaLayout.DIAMOND_DOTS_SCALE_FACTOR, OpaLayout.DIAMOND_ANIMATION_DURATION, this.mFastOutSlowInInterpolator));
         set.add(this.getScaleAnimatorX(this.mWhite, OpaLayout.DIAMOND_HOME_SCALE_FACTOR, OpaLayout.DIAMOND_ANIMATION_DURATION, this.mFastOutSlowInInterpolator));
         set.add(this.getScaleAnimatorY(this.mWhite, OpaLayout.DIAMOND_HOME_SCALE_FACTOR, OpaLayout.DIAMOND_ANIMATION_DURATION, this.mFastOutSlowInInterpolator));
-        set.add(this.getScaleAnimatorX(this.mHalo, OpaLayout.HALO_SCALE_FACTOR, OpaLayout.MIN_DIAMOND_DURATION, this.mFastOutSlowInInterpolator));
-        set.add(this.getScaleAnimatorY(this.mHalo, OpaLayout.HALO_SCALE_FACTOR, OpaLayout.MIN_DIAMOND_DURATION, this.mFastOutSlowInInterpolator));
         this.getLongestAnim(set).addListener((Animator.AnimatorListener)new AnimatorListenerAdapter() {
             public void onAnimationCancel(final Animator animator) {
                 OpaLayout.this.mCurrentAnimators.clear();
@@ -361,8 +350,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
         }
         set.add(this.getScaleAnimatorX(this.mWhite, 0.0f, OpaLayout.HOME_RESIZE_DURATION, this.mHomeDisappearInterpolator));
         set.add(this.getScaleAnimatorY(this.mWhite, 0.0f, OpaLayout.HOME_RESIZE_DURATION, this.mHomeDisappearInterpolator));
-        set.add(this.getScaleAnimatorX(this.mHalo, 0.0f, OpaLayout.HOME_RESIZE_DURATION, this.mHomeDisappearInterpolator));
-        set.add(this.getScaleAnimatorY(this.mHalo, 0.0f, OpaLayout.HOME_RESIZE_DURATION, this.mHomeDisappearInterpolator));
         this.getLongestAnim(set).addListener((Animator.AnimatorListener)new AnimatorListenerAdapter() {
             public void onAnimationCancel(final Animator animator) {
                 OpaLayout.this.mCurrentAnimators.clear();
@@ -395,8 +382,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
         set.add(this.getScaleAnimatorY(this.mYellow, 1.0f, OpaLayout.RETRACT_ANIMATION_DURATION, this.mRetractInterpolator));
         set.add(this.getScaleAnimatorX(this.mWhite, 1.0f, OpaLayout.RETRACT_ANIMATION_DURATION, this.mRetractInterpolator));
         set.add(this.getScaleAnimatorY(this.mWhite, 1.0f, OpaLayout.RETRACT_ANIMATION_DURATION, this.mRetractInterpolator));
-        set.add(this.getScaleAnimatorX(this.mHalo, 1.0f, OpaLayout.RETRACT_ANIMATION_DURATION, this.mFastOutSlowInInterpolator));
-        set.add(this.getScaleAnimatorY(this.mHalo, 1.0f, OpaLayout.RETRACT_ANIMATION_DURATION, this.mFastOutSlowInInterpolator));
         this.getLongestAnim(set).addListener((Animator.AnimatorListener)new AnimatorListenerAdapter() {
             public void onAnimationEnd(final Animator animator) {
                 OpaLayout.this.mCurrentAnimators.clear();
@@ -484,7 +469,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
         mYellow = this.findViewById(R.id.yellow);
         mGreen = this.findViewById(R.id.green);
         mWhite = this.findViewById(R.id.white);
-        mHalo = this.findViewById(R.id.halo);
         mHome = (KeyButtonView) this.findViewById(R.id.home_button);
 
         this.setOpaEnabled(true);
@@ -587,7 +571,6 @@ public class OpaLayout extends FrameLayout implements ButtonDispatcher.ButtonInt
         this.mRed.setVisibility(visibility);
         this.mYellow.setVisibility(visibility);
         this.mGreen.setVisibility(visibility);
-        this.mHalo.setVisibility(visibility);
     }
 
 }
