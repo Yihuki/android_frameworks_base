@@ -47,6 +47,12 @@
     <color name="xosp_midnight_palette_A200">#809cb9</color>
     <color name="xosp_midnight_palette_A400">#374d64</color>
     <color name="xosp_midnight_palette_A700">#161f29</color>
+
+    <!-- Shutdown/reboot dialog -->
+    <color name="shutdown_background">@color/xosp_midnight_palette_700</color>
+    <color name="shutdown_primary_text">#ffffffff</color>
+    <color name="shutdown_progress_tint">@color/xosp_blue_palette_500</color>
+
 </resources>
  
  
