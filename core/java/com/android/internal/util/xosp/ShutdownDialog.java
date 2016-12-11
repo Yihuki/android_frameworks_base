@@ -54,7 +54,7 @@ public class ShutdownDialog extends Dialog {
     }
 
     public static ShutdownDialog create(Context context, int windowType, int action) {
-        final int theme = com.android.internal.R.style.Theme_Material_Light;
+        final int theme = com.android.internal.R.style.Theme_DeviceDefault_Light_NoActionBar_TranslucentDecor;
         return new ShutdownDialog(context, theme, windowType, action);
     }
 
@@ -75,7 +75,14 @@ public class ShutdownDialog extends Dialog {
             getWindow().setType(windowType);
         }
         getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN | WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN | WindowManager.LayoutParams.FLAG_FULLSCREEN | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION | WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        getWindow().getDecorView();
+        rootView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                              | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                              | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                              | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                              | View.SYSTEM_UI_FLAG_FULLSCREEN
+                              | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
         final WindowManager.LayoutParams lp = getWindow().getAttributes();
         // turn off button lights while shutdown/reboot screen is showing
