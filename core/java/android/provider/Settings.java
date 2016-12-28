@@ -3730,17 +3730,6 @@ public final class Settings {
          */
         public static final String DOUBLE_TAP_SLEEP_ANYWHERE = "double_tap_sleep_anywhere";
         
-        /**
-         * Navigation bar height when it is on protrait
-         * @hide
-         */
-         public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
-
-        /**
-         * Navigation bar height when it is on landscape at the right
-         * @hide
-         */
-         public static final String NAVIGATION_BAR_WIDTH = "navigation_bar_width";
         
         /**
          * This restore back the old NavBar icons for users who don't like the new N ones
