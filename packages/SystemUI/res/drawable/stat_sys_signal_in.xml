@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+<vector android:name="IN" android:height="17.0dip" android:width="17.0dip" android:viewportWidth="17.0" android:viewportHeight="17.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:name="in" android:fillColor="#00ffffff" android:pathData="M8,13c0,0,0.75-1.5,1-2s1-2,1-2H6L8,13z" />
+    <group android:name="down_arrow" android:translateX="4.0" android:translateY="7.0">
+        <path android:fillColor="#ffffffff" android:pathData="M1.5525,3 L3.0525,0 L0.0525,0 L1.5525,3 Z" android:strokeWidth="1.0" />
+    </group>
 </vector>

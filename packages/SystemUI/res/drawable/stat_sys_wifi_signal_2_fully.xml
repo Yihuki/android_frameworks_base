@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+<vector android:height="17.0dip" android:width="17.0dip" android:viewportWidth="17.0" android:viewportHeight="17.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:name="bar4" android:fillColor="#66ffffff" android:pathData="M4.085,10.711C6.28,9.019,9.021,8,12,8s5.72,1.019,7.915,2.711l1.831-2.381C19.045,6.25,15.672,5,12,5         S4.955,6.25,2.254,8.33L4.085,10.711z" />
-    <path android:name="bar3" android:fillColor="#66ffffff" android:pathData="M6.521,13.877C8.04,12.705,9.938,12,12,12s3.96,0.705,5.479,1.877l1.827-2.375C17.279,9.939,14.75,9,12,9         s-5.279,0.939-7.307,2.502L6.521,13.877z" />
-    <path android:name="bar2" android:fillColor="#ffffffff" android:pathData="M7.129,14.668l1.836,2.387C9.809,16.403,10.854,16,12,16s2.191,0.403,3.035,1.055l1.836-2.387         C15.52,13.627,13.834,13,12,13S8.48,13.627,7.129,14.668z" />
-    <path android:name="bar1" android:fillColor="#ffffffff" android:pathData="M14.428,17.844C13.752,17.322,12.917,17,12,17s-1.752,0.322-2.428,0.844L12,21L14.428,17.844z" />
+    <group android:translateY="2.0">
+        <path android:name="bar4" android:fillColor="?backgroundColor" android:pathData="M15.695,4.625 C13.605,3.009 11.119,2.155 8.503,2.155 C5.891,2.155 3.406,3.008 1.312,4.625 L0,2.913 C2.468,1.007 5.409,0 8.503,0 C11.599,0 14.539,1.007 17,2.907 L15.695,4.625 Z" android:strokeWidth="1.0" />
+        <path android:name="bar3" android:fillColor="?backgroundColor" android:pathData="M2.169,5.74 L3.476,7.447 C4.938,6.317 6.676,5.72 8.503,5.72 C10.332,5.72 12.071,6.317 13.531,7.447 L14.838,5.742 L14.827,5.73 C12.997,4.317 10.807,3.565 8.503,3.565 C6.201,3.565 4.01,4.317 2.169,5.74 Z" android:strokeWidth="1.0" />
+        <path android:name="bar2" android:fillColor="?fillColor" android:pathData="M8.503,7.13 C6.989,7.13 5.546,7.625 4.333,8.562 L5.649,10.279 C6.492,9.627 7.478,9.285 8.503,9.285 C9.531,9.285 10.518,9.629 11.359,10.279 L12.674,8.565 L12.651,8.541 C11.462,7.625 10.019,7.13 8.503,7.13" android:strokeWidth="1.0" />
+        <path android:name="bar1" android:fillColor="?fillColor" android:pathData="M6.504,11.392 L6.504,11.392 L8.503,14 L10.503,11.392 C9.908,10.934 9.219,10.695 8.503,10.695 C7.786,10.695 7.094,10.935 6.504,11.392" android:strokeWidth="1.0" />
+    </group>
 </vector>

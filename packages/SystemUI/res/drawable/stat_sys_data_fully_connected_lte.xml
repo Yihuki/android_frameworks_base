@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="false" android:viewportWidth="24.0" android:viewportHeight="24.0"
+<vector android:name="LTE" android:height="17.0dip" android:width="17.0dip" android:autoMirrored="false" android:viewportWidth="17.0" android:viewportHeight="17.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:name="L" android:fillColor="#ffffffff" android:pathData="M2,7h2v1H1V3h1c0,0,0,1.5,0,2S2,7,2,7z" />
-    <path android:name="T" android:fillColor="#ffffffff" android:pathData="M7,3H6H5H4v1h1v4h1c0,0,0-1.5,0-2s0-2,0-2h1V3z" />
-    <path android:name="E" android:fillColor="#ffffffff" android:pathData="M11,4V3H9H8v1c0,0,0,1.5,0,2s0,2,0,2h1h2V7H9V6h2V5H9V4H11z" />
+    <path android:name="L" android:fillColor="#ffffffff" android:pathData="M0,-0.0003 L0,5.9997 L3,5.9997 L3,4.9997 L1,4.9997 L1,-0.0003 L0,-0.0003 Z" android:strokeWidth="1.0" />
+    <path android:name="T" android:fillColor="#ffffffff" android:pathData="M2.5002,-0.0003 L2.5002,0.9997 L3.9992,0.9997 L3.9992,5.9997 L5.0002,5.9997 L5.0002,0.9997 L6.5002,0.9997 L6.5002,-0.0003 L2.5002,-0.0003 Z" android:strokeWidth="1.0" />
+    <path android:name="E" android:fillColor="#ffffffff" android:pathData="M7.0002,-0.0003 L7.0002,1.2017 L7.0002,5.9997 L8.2012,5.9997 L10.0002,5.9997 L10.0002,4.9997 L8.0002,4.9997 L8.0002,3.4997 L10.0002,3.4997 L10.0002,2.4997 L8.0002,2.4997 L8.0002,0.9997 L10.0002,0.9997 L10.0002,-0.0003 L7.0002,-0.0003 Z" android:strokeWidth="1.0" />
 </vector>

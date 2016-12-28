@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+<vector android:name="OUT" android:height="17.0dip" android:width="17.0dip" android:viewportWidth="17.0" android:viewportHeight="17.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:name="out" android:fillColor="#00ffffff" android:pathData="M3,9l-2,4h4c0,0-0.75-1.5-1-2S3,9,3,9z" />
+    <group android:name="up_arrow" android:translateY="7.0">
+        <path android:fillColor="#ffffffff" android:pathData="M1.5628,0 L0.0528,3 L3.0528,3 L1.5628,0 Z" android:strokeWidth="1.0" />
+    </group>
 </vector>
