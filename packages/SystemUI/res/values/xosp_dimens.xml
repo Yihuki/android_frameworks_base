@@ -21,4 +21,10 @@
 
     <!-- Network traffic monitor multi-line text size -->
     <dimen name="net_traffic_multi_text_size">7dp</dimen>
+
+    <dimen name="notification_material_rounded_rect_radius">0.0dip</dimen>
+    <dimen name="notification_material_rounded_rect_radius_negative">-2.0dip</dimen>
+    <item type="dimen" name="somc_keyguard_fingerprint_animation_alpha">0.76</item>
+    <item type="dimen" name="somc_keyguard_affordance_icon_height">@dimen/keyguard_affordance_icon_height</item>
+    <item type="dimen" name="somc_keyguard_affordance_icon_width">@dimen/keyguard_affordance_icon_width</item>
 </resources>
