@@ -25,13 +25,23 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
 import android.util.Log;
+import android.util.DisplayMetrics;
+import android.view.DisplayInfo;
+import android.view.WindowManager;
 
 import java.util.List;
+import java.util.Locale;
 
 public class XOSPUtils {
 
     private static final String TAG = "XOSPUtils";
+
+    // Device types
+    private static final int DEVICE_PHONE  = 0;
+    private static final int DEVICE_HYBRID = 1;
+    private static final int DEVICE_TABLET = 2;
 
     /**
      * Checks if a specific package is installed.
