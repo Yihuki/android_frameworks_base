@@ -111,4 +111,8 @@
     <!-- Announcement made when NFC changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_nfc_changed_on">NFC turned on.</string>
 
-</resources>
+    <!-- Language\Locale Tile -->
+    <string name="quick_settings_locale_label">Language</string>
+    <string name="quick_settings_locale_more_locales_toast">Please configure multiple languages to enable toggle functionality</string>
+
+</resources> 
