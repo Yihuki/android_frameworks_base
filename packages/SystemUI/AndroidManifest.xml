@@ -177,6 +177,9 @@
     <uses-permission android:name="android.permission.READ_NFC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_NFC_SETTINGS" />
 
+    <!-- Locale QS -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
     <application
         android:name=".SystemUIApplication"
         android:persistent="true"
