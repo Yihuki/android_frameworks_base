@@ -112,14 +112,12 @@ public class NotificationBackgroundView extends View {
         }
     }
 
-    class SettingsObserver extends UserContentObserver {
+    class SettingsObserver extends ContentObserver {
         SettingsObserver(Handler handler) {
             super(handler);
         }
         
-        @Override
-        protected void observe() {
-            super.observe();
+        void observe() {
             
             ContentResolver resolver = mContext.getContentResolver();
             resolver.registerContentObserver(Settings.System.getUriFor(
@@ -129,10 +127,7 @@ public class NotificationBackgroundView extends View {
             update();
         }
 
-        @Override
-        protected void unobserve() {
-            super.unobserve();
-            
+        void unobserve() {
             ContentResolver resolver = mContext.getContentResolver();
             resolver.unregisterContentObserver(this);
         }
@@ -147,7 +142,6 @@ public class NotificationBackgroundView extends View {
             update();
         }
 
-        @Override
         public void update() {
             ContentResolver resolver = mContext.getContentResolver();
             mTranslucentNotifications = Settings.System.getIntForUser(resolver,

@@ -610,6 +610,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                     
             RecentsActivity.updateBlurColors(mBlurDarkColorFilter,mBlurMixedColorFilter,mBlurLightColorFilter);
             RecentsActivity.updateRadiusScale(mScaleRecents,mRadiusRecents);
+            updatePreferences();
         }
     }
 
