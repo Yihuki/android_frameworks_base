@@ -3730,6 +3730,17 @@ public final class Settings {
          */
         public static final String DOUBLE_TAP_SLEEP_ANYWHERE = "double_tap_sleep_anywhere";
         
+        /**
+         * Navigation bar height when it is on protrait
+         * @hide
+         */
+         public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+
+        /**
+         * Navigation bar height when it is on landscape at the right
+         * @hide
+         */
+         public static final String NAVIGATION_BAR_WIDTH = "navigation_bar_width";
         
         /**
          * This restore back the old NavBar icons for users who don't like the new N ones
@@ -4073,21 +4084,6 @@ public final class Settings {
         @Deprecated
         public static final String DEVICE_PROVISIONED = Global.DEVICE_PROVISIONED;
 
-        /** Navbar height
-         * @hide
-         */
-        public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
-
-        /** Navbar height in landscape
-         * @hide
-         */
-        public static final String NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
-
-	/** Navbar width
-         * @hide
-         */
-        public static final String NAVIGATION_BAR_WIDTH = "navigation_bar_width";
-        
         /**
          * @deprecated Use {@link android.provider.Settings.Global#HTTP_PROXY} instead
          */
