@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+<vector android:height="17.0dip" android:width="17.0dip" android:viewportWidth="17.0" android:viewportHeight="17.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:name="bar4" android:fillColor="#ffffffff" android:pathData="M4.085,10.711C6.28,9.019,9.021,8,12,8s5.72,1.019,7.915,2.711l1.831-2.381C19.045,6.25,15.672,5,12,5         S4.955,6.25,2.254,8.33L4.085,10.711z" />
-    <path android:name="bar3" android:fillColor="#ffffffff" android:pathData="M6.521,13.877C8.04,12.705,9.938,12,12,12s3.96,0.705,5.479,1.877l1.827-2.375C17.279,9.939,14.75,9,12,9         s-5.279,0.939-7.307,2.502L6.521,13.877z" />
-    <path android:name="bar2" android:fillColor="#ffffffff" android:pathData="M7.129,14.668l1.836,2.387C9.809,16.403,10.854,16,12,16s2.191,0.403,3.035,1.055l1.836-2.387         C15.52,13.627,13.834,13,12,13S8.48,13.627,7.129,14.668z" />
-    <path android:name="bar1" android:fillColor="#ffffffff" android:pathData="M14.428,17.844C13.752,17.322,12.917,17,12,17s-1.752,0.322-2.428,0.844L12,21L14.428,17.844z" />
+    <path android:name="bars" android:fillColor="?fillColor" android:pathData="M6.504,13.392 L6.504,13.392 L8.503,16 L10.503,13.392 C9.908,12.934 9.219,12.695 8.503,12.695 C7.786,12.695 7.094,12.935 6.504,13.392 L6.504,13.392 Z M8.503,9.13 C6.989,9.13 5.546,9.625 4.333,10.562 L5.649,12.279 C6.492,11.627 7.478,11.285 8.503,11.285 C9.531,11.285 10.518,11.629 11.359,12.279 L12.674,10.565 L12.651,10.541 C11.462,9.625 10.019,9.13 8.503,9.13 L8.503,9.13 Z M8.503,5.565 C6.201,5.565 4.01,6.317 2.169,7.74 L2.168,7.74 L3.476,9.447 C4.938,8.317 6.676,7.72 8.503,7.72 C10.332,7.72 12.071,8.317 13.531,9.447 L14.838,7.742 L14.827,7.73 C12.997,6.317 10.807,5.565 8.503,5.565 L8.503,5.565 Z M15.695,6.625 C13.605,5.009 11.119,4.155 8.503,4.155 C5.891,4.155 3.406,5.008 1.312,6.625 L0,4.913 C2.468,3.007 5.409,2 8.503,2 C11.599,2 14.539,3.007 17,4.907 L15.695,6.625 Z" android:strokeWidth="1.0" />
 </vector>

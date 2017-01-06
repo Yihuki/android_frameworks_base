@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="false" android:viewportWidth="24.0" android:viewportHeight="24.0"
+<vector android:name="1X" android:height="17.0dip" android:width="17.0dip" android:autoMirrored="false" android:viewportWidth="17.0" android:viewportHeight="17.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:name="1" android:fillColor="#ffffffff" android:pathData="M4,8H3.019V3.932H2V3.176L4,3V8z" />
-    <path android:name="x" android:fillColor="#ffffffff" android:pathData="M7.044,5.501h0.021l0.562-1.164h1.117L7.64,6.148L8.78,8H7.667L7.066,6.784L6.469,8H5.351l1.142-1.852L5.385,4.337h1.11         L7.044,5.501z" />
+    <group android:translateY="1.0">
+        <path android:name="1" android:fillColor="#ffffffff" android:pathData="M0.0004,0.1762 L0.0004,0.9322 L1.0194,0.9322 L1.0194,5.0002 L2.0004,5.0002 L2.0004,0.0002 L0.0004,0.1762 Z" android:strokeWidth="1.0" />
+        <path android:name="X" android:fillColor="#ffffffff" android:pathData="M4.9202,2.2711 L4.9992,2.2711 L5.6542,1.0001 L6.9572,1.0001 L5.6702,2.9781 L7.0002,5.0001 L5.7012,5.0001 L5.0022,3.6721 L4.3042,5.0001 L3.0002,5.0001 L4.3312,2.9781 L3.0392,1.0001 L4.3342,1.0001 L4.9202,2.2711 Z" android:strokeWidth="1.0" />
+    </group>
 </vector>
