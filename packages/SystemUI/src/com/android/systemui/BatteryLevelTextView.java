@@ -106,7 +106,7 @@ public class BatteryLevelTextView extends TextView implements
     
     private void updateChargingSymbol(int level, boolean pluggedIn) {
         if (pluggedIn)
-            setText(NumberFormat.getInstance().format((double) level / 100.0) + "+");
+            setText("+" + NumberFormat.getPercentInstance().format((double) level / 100.0));
         else
             setText(NumberFormat.getPercentInstance().format((double) level / 100.0));
     }
