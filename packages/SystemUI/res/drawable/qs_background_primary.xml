@@ -2,7 +2,7 @@
 <inset android:insetTop="@dimen/notification_material_rounded_rect_radius_negative"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <shape>
-        <solid android:color="@color/system_primary_color" />
+        <solid android:color="?android:attr/colorPrimary" />
         <corners android:radius="@dimen/notification_material_rounded_rect_radius" />
     </shape>
 </inset>
