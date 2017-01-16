@@ -33,20 +33,20 @@
     <color name="xosp_blue_palette_A700">#005585</color>
 
 
-    <color name="xosp_midnight_palette_50">#b1c3d4</color>
-    <color name="xosp_midnight_palette_100">#809cb9</color>
-    <color name="xosp_midnight_palette_200">#5c80a5</color>
-    <color name="xosp_midnight_palette_300">#425d77</color>
-    <color name="xosp_midnight_palette_400">#374d64</color>
-    <color name="xosp_midnight_palette_500">#2c3e50</color>
-    <color name="xosp_midnight_palette_600">#212f3c</color>
-    <color name="xosp_midnight_palette_700">#161f29</color>
-    <color name="xosp_midnight_palette_800">#0b1015</color>
-    <color name="xosp_midnight_palette_900">#010101</color>
-    <color name="xosp_midnight_palette_A100">#b1c3d4</color>
-    <color name="xosp_midnight_palette_A200">#809cb9</color>
-    <color name="xosp_midnight_palette_A400">#374d64</color>
-    <color name="xosp_midnight_palette_A700">#161f29</color>
+    <color name="xosp_midnight_palette_50">#c4cacf</color>
+    <color name="xosp_midnight_palette_100">#9aa5ad</color>
+    <color name="xosp_midnight_palette_200">#7b8993</color>
+    <color name="xosp_midnight_palette_300">#59656e</color>
+    <color name="xosp_midnight_palette_400">#4c555d</color>
+    <color name="xosp_midnight_palette_500">#3e464c</color>
+    <color name="xosp_midnight_palette_600">#30363b</color>
+    <color name="xosp_midnight_palette_700">#22272a</color>
+    <color name="xosp_midnight_palette_800">#151719</color>
+    <color name="xosp_midnight_palette_900">#070809</color>
+    <color name="xosp_midnight_palette_A100">#adc8dc</color>
+    <color name="xosp_midnight_palette_A200">#6698bd</color>
+    <color name="xosp_midnight_palette_A400">#476276</color>
+    <color name="xosp_midnight-palette_A700">#45535e</color>
 
     <!-- Shutdown/reboot dialog -->
     <color name="shutdown_background">@color/xosp_midnight_palette_700</color>
