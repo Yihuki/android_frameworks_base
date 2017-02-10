@@ -16,6 +16,6 @@
 -->
 <resources>
   <!-- Language\Locale Tile -->
-  <string name="quick_settings_locale_label">Linguaggio</string>
-  <string name="quick_settings_locale_more_locales_toast">Per favore configura multipli linguaggi per attivare la funzionalità</string>
+  <string name="quick_settings_locale_label">語言</string>
+  <string name="quick_settings_locale_more_locales_toast">請在「設定」設定多種語言以使用本開關</string>
 </resources>

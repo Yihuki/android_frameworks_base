@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <resources>
-  <!-- Language\Locale Tile -->
-  <string name="quick_settings_locale_label">Linguaggio</string>
-  <string name="quick_settings_locale_more_locales_toast">Per favore configura multipli linguaggi per attivare la funzionalità</string>
+  <!-- Button to soft reboot the device, within the Reboot Options dialog -->
+  <string name="reboot_systemui">Reštartovať SystemUI</string>
 </resources>
