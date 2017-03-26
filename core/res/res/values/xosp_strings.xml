@@ -26,4 +26,7 @@
     <!-- label for current user in phone options dialog -->
     <string name="global_action_current_user">Current</string>
 
+    <!-- Restart Progress Dialog. This is shown if the user chooses to restart the phone. -->
+    <string name="reboot_progress">Restarting\u2026</string>
+
 </resources>

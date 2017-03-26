@@ -186,8 +186,6 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                 com.android.internal.R.bool.config_useFixedVolume);
 
         mEmergencyAffordanceManager = new EmergencyAffordanceManager(context);
-
-        updatePowerMenuActions();
     }
 
     /**
@@ -733,7 +731,7 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                             createCircularClip(rawAvatar, avatarSize, avatarSize));
 
                     SinglePressAction switchToUser = new SinglePressAction(
-                            com.android.internal.R.drawable.ic_lock_user, avatar,
+                            com.android.internal.R.drawable.ic_menu_cc, avatar,
                             (user.name != null ? user.name : "Primary")) {
                         public void onPress() {
                             try {
