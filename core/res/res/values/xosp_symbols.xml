@@ -16,8 +16,6 @@
 -->
 <resources>
 
-    <java-symbol type="bool" name="config_singleStageCameraKey" />
-
     <!-- Package Manager -->
     <java-symbol type="array" name="config_disabledComponents" />
     <java-symbol type="array" name="config_forceEnabledComponents" />
