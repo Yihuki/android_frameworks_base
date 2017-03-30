@@ -457,7 +457,7 @@ public class BatteryMeterDrawable extends Drawable implements
                             : (mLevel == 100 ? 0.38f : 0.5f)));
             mTextHeight = -mTextPaint.getFontMetrics().ascent;
             pctText = String.valueOf(SINGLE_DIGIT_PERCENT ? (level/10) : level);
-            pctX = mWidth * 0.5f;
+            pctX = mWidth * -0.5f;
             pctY = (mHeight + mTextHeight) * 0.47f;
             pctOpaque = levelTop > pctY;
             if (!pctOpaque) {
