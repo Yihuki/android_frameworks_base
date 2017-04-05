@@ -98,7 +98,7 @@
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Caffeine</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>ù
+    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
 
     <!-- Nfc qs tile -->
     <string name="quick_settings_nfc_label">NFC</string>
@@ -114,38 +114,5 @@
     <!-- Language\Locale Tile -->
     <string name="quick_settings_locale_label">Language</string>
     <string name="quick_settings_locale_more_locales_toast">Please configure multiple languages to enable toggle functionality</string>
-
-    <!-- Sound QS Tile -->
-    <string name="quick_settings_sound_label">Sound</string>
-    <string name="quick_settings_sound_ring">Ring</string>
-    <string name="quick_settings_sound_vibrate">Vibrate</string>
-    <string name="quick_settings_sound_dnd">Do not disturb</string>
-
-    <!-- Reboot QS Tile -->
-    <string name="quick_settings_reboot_label">Reboot</string>
-    <string name="quick_settings_reboot_recovery_label">Recovery Reboot</string>
-    <string name="quick_settings_soft_reboot_label">Soft Reboot</string>
-    <string name="quick_settings_systemui_reboot">SystemUI Reboot</string>
-
-
-     <!-- Volume QS Tile -->
-     <string name="accessibility_quick_settings_volume_panel">Volume</string>
-     <string name="quick_settings_volume_panel_label">Volume</string>
-
-    <!-- Caffeine QS Tile -->
-    <string name="quick_settings_caffeine_label">Caffeine</string>
-    <string name="accessibility_quick_settings_caffeine_off">Caffeine off</string>
-    <string name="accessibility_quick_settings_caffeine_on">Caffeine on</string>
-
-    <!-- Nfc qs tile -->
-    <string name="quick_settings_nfc_label">NFC</string>
-    <!-- Content description of the NFC tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_nfc_off">NFC off.</string>
-    <!-- Content description of the NFC tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_nfc_on">NFC on.</string>
-    <!-- Announcement made when NFC changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_nfc_changed_off">NFC turned off.</string>
-    <!-- Announcement made when NFC changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_nfc_changed_on">NFC turned on.</string>
 
 </resources> 
