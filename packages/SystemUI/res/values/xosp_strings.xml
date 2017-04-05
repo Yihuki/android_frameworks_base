@@ -89,7 +89,9 @@
 
     <!-- Reboot/Recovery QS Tile -->
     <string name="quick_settings_reboot_label">Reboot</string>
-    <string name="quick_settings_reboot_recovery_label">Recovery</string>
+    <string name="quick_settings_reboot_recovery_label">Recovery Reboot</string>
+    <string name="quick_settings_soft_reboot_label">Soft Reboot</string>
+    <string name="quick_settings_systemui_reboot">SystemUI Reboot</string>
 
     <!-- Volume QS Tile -->
     <string name="accessibility_quick_settings_volume_panel">Volume</string>
