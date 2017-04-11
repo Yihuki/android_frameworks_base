@@ -47,10 +47,6 @@ public abstract class UserContentObserver extends ContentObserver {
 
     private Handler mHandler;
 
-    /**
-     * Content observer that tracks user switches
-     * to allow clients to re-load settings for current user
-     */
     public UserContentObserver(Handler handler) {
         super(handler);
         mHandler = handler;
@@ -64,7 +60,7 @@ public abstract class UserContentObserver extends ContentObserver {
 
     protected void observe() {
         try {
-            ActivityManagerNative.getDefault().registerUserSwitchObserver(mUserSwitchObserver);
+            ActivityManagerNative.getDefault().registerUserSwitchObserver(mUserSwitchObserver, TAG);
         } catch (RemoteException e) {
             Log.w(TAG, "Unable to register user switch observer!", e);
         }
@@ -79,11 +75,12 @@ public abstract class UserContentObserver extends ContentObserver {
         }
     }
 
-    /**
-     *  Called to notify of registered uri changes and user switches.
-     *  Always invoked on the handler passed in at construction
-     */
     protected abstract void update();
+
+    @Override
+    public void onChange(boolean selfChange) {
+        update();
+    }
 
     @Override
     public void onChange(boolean selfChange, Uri uri) {
