@@ -207,9 +207,6 @@ public final class PowerManagerService extends SystemService
     private DreamManagerInternal mDreamManager;
     private Light mAttentionLight;
     private Light mButtonsLight;
-    private Light mKeyboardLight;
-    private Light mCapsLight;
-    private Light mFnLight;
 
     private final Object mLock = new Object();
 
@@ -526,8 +523,6 @@ public final class PowerManagerService extends SystemService
     private static native void nativeSendPowerHint(int hintId, int data);
     private static native void nativeSetFeature(int featureId, int data);
 
-    private boolean mKeyboardVisible = false;
-
     // Whether proximity check on wake is enabled by default
     private boolean mProximityWakeEnabledByDefaultConfig;
 
@@ -629,9 +624,6 @@ public final class PowerManagerService extends SystemService
             mLightsManager = getLocalService(LightsManager.class);
             mAttentionLight = mLightsManager.getLight(LightsManager.LIGHT_ID_ATTENTION);
             mButtonsLight = mLightsManager.getLight(LightsManager.LIGHT_ID_BUTTONS);
-            mKeyboardLight = mLightsManager.getLight(LightsManager.LIGHT_ID_KEYBOARD);
-            mCapsLight = mLightsManager.getLight(LightsManager.LIGHT_ID_CAPS);
-            mFnLight = mLightsManager.getLight(LightsManager.LIGHT_ID_FUNC);
 
             // Initialize display power management.
             mDisplayManagerInternal.initPowerManagement(
@@ -1775,13 +1767,11 @@ public final class PowerManagerService extends SystemService
                     if (now < nextTimeout) {
                         if (now > mLastUserActivityTime + BUTTON_ON_DURATION) {
                             mButtonsLight.setBrightness(0);
-                            mKeyboardLight.setBrightness(0);
                         } else {
                         	if (!mProximityPositive) {
-	                            mButtonsLight.setBrightness(mDisplayPowerRequest.screenBrightness);
-	                            mKeyboardLight.setBrightness(mKeyboardVisible ? mDisplayPowerRequest.screenBrightness : 0);
-	                            nextTimeout = now + BUTTON_ON_DURATION;
-	                        }
+                            	mButtonsLight.setBrightness(mDisplayPowerRequest.screenBrightness);
+                            	nextTimeout = now + BUTTON_ON_DURATION;
+                            }
                         }
                         mUserActivitySummary = USER_ACTIVITY_SCREEN_BRIGHT;
                     } else {
@@ -3535,39 +3525,6 @@ public final class PowerManagerService extends SystemService
                 userActivityInternal(eventTime, event, flags, uid);
             } finally {
                 Binder.restoreCallingIdentity(ident);
-            }
-        }
-
-        @Override // Binder call
-        public void setKeyboardVisibility(boolean visible) {
-            synchronized (mLock) {
-                if (DEBUG_SPEW) {
-                    Slog.d(TAG, "setKeyboardVisibility: " + visible);
-                }
-                if (mKeyboardVisible != visible) {
-                    mKeyboardVisible = visible;
-                    if (!visible) {
-                        mKeyboardLight.turnOff();
-                        // If hiding keyboard, turn off leds
-                        setKeyboardLight(false, 1);
-                        setKeyboardLight(false, 2);
-                    }
-                }
-            }
-        }
-
-        @Override // Binder call
-        public void setKeyboardLight(boolean on, int key) {
-            if (key == 1) {
-                if (on)
-                    mCapsLight.setColor(0x00ffffff);
-                else
-                    mCapsLight.turnOff();
-            } else if (key == 2) {
-                if (on)
-                    mFnLight.setColor(0x00ffffff);
-                else
-                    mFnLight.turnOff();
             }
         }
 
