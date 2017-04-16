@@ -457,8 +457,8 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
         }
     }
     
-    private final class RebootAction extends SinglePressAction {
-        private RebootAction() {
+    private final class RestartAction extends SinglePressAction {
+        private RestartAction() {
             super(com.android.internal.R.drawable.ic_lock_power_reboot,
                     R.string.global_action_reboot);
         }

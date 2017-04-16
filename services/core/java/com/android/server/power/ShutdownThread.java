@@ -381,8 +381,9 @@ public final class ShutdownThread extends Thread {
         } else {
             if (mReboot) {
                 sd = ShutdownDialog.create(context, 2);
-        } else {
-            sd = ShutdownDialog.create(context, 3);
+            }else {
+                sd = ShutdownDialog.create(context, 3);
+            }
         }
 
         sInstance.mShutdownDialog = sd;
