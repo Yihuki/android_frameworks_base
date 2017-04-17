@@ -38,6 +38,7 @@ public final class SignalTileView extends QSIconView {
     private ImageView mOut;
 
     private int mWideOverlayIconStartPadding;
+    private int mIconLayoutHeight;
 
     public SignalTileView(Context context) {
         super(context);

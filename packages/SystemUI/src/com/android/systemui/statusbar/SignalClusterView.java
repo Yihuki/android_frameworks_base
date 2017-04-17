@@ -298,6 +298,7 @@ public class SignalClusterView
     @Override
     public void setNoSims(boolean show) {
         mNoSimsVisible = show && !mBlockMobile;
+        mMobileIms = !mNoSimsVisible && mMobileIms;
         apply();
     }
 
@@ -554,6 +555,10 @@ public class SignalClusterView
     private void applyIconTint() {
         setTint(mVpn, StatusBarIconController.getTint(mTintArea, mVpn, mIconTint));
         setTint(mAirplane, StatusBarIconController.getTint(mTintArea, mAirplane, mIconTint));
+        setTint(mImsOverWifiImageView, StatusBarIconController.getTint(
+            mTintArea, mImsOverWifiImageView, mIconTint));
+        setTint(mMobileImsImageView, StatusBarIconController.getTint(
+            mTintArea, mMobileImsImageView, mIconTint));
         applyDarkIntensity(
                 StatusBarIconController.getDarkIntensity(mTintArea, mNoSims, mDarkIntensity),
                 mNoSims, mNoSimsDark);
@@ -699,6 +704,8 @@ public class SignalClusterView
                     StatusBarIconController.getDarkIntensity(tintArea, mMobile, darkIntensity),
                     mMobile, mMobileDark);
             setTint(mMobileType, StatusBarIconController.getTint(tintArea, mMobileType, tint));
+            setTint(mDataNetworkType, StatusBarIconController.getTint(tintArea,
+                    mDataNetworkType, tint));
         }
     }
 }
