@@ -51,4 +51,10 @@
         <item>0</item><item>3</item>
         <item>3</item><item>3</item>
     </array>
+    <!-- List of Carrier one mcc mncs-->
+    <string-array name="config_carrier_one_networks" translatable="false">
+    </string-array>
+
+    <integer-array name="carrier_one_strength_threshold_values">
+    </integer-array>
 </resources>
