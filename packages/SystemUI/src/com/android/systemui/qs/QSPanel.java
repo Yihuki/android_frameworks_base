@@ -99,7 +99,7 @@ public class QSPanel extends LinearLayout implements Tunable, Callback {
 
         mBrightnessController = new BrightnessController(getContext(),
                 brightnessIcon,
-                (ToggleSlider) findViewById(R.id.brightness_slider)),
+                (ToggleSlider) findViewById(R.id.brightness_slider),
                 (CheckBox) findViewById(R.id.brightness_auto));
 
     }
