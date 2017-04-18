@@ -28,6 +28,7 @@ import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.telephony.ServiceState;
 import android.telephony.SubscriptionInfo;
+import android.telephony.SubscriptionManager;
 import android.text.TextUtils;
 import android.text.method.SingleLineTransformationMethod;
 import android.util.AttributeSet;
