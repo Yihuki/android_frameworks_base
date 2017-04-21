@@ -1222,29 +1222,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         // listen for NAVIGATION_BAR_ENABLED setting (per-user)
         resetNavBarObserver();
 
-        return mStatusBarView;
-    }
-
-    private void initEmergencyCryptkeeperText() {
-        View emergencyViewStub = mStatusBarWindow.findViewById(R.id.emergency_cryptkeeper_text);
-        if (mNetworkController.hasEmergencyCryptKeeperText()) {
-            if (emergencyViewStub != null) {
-                ((ViewStub) emergencyViewStub).inflate();
-            }
-            mNetworkController.addSignalCallback(new NetworkController.SignalCallback() {
-                @Override
-                public void setIsAirplaneMode(NetworkController.IconState icon) {
-                    recomputeDisableFlags(true /* animate */);
-                }
-            });
-        } else if (emergencyViewStub != null) {
-            ViewGroup parent = (ViewGroup) emergencyViewStub.getParent();
-            parent.removeView(emergencyViewStub);
-        }
-    }
-
-
-         try {
+        try {
             BroadcastReceiver receiver = new BroadcastReceiver() {
 
                 @Override
@@ -1277,8 +1255,26 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         } catch (Exception e){
             Log.d("mango918", String.valueOf(e));
         }
-        
+
         return mStatusBarView;
+    }
+
+    private void initEmergencyCryptkeeperText() {
+        View emergencyViewStub = mStatusBarWindow.findViewById(R.id.emergency_cryptkeeper_text);
+        if (mNetworkController.hasEmergencyCryptKeeperText()) {
+            if (emergencyViewStub != null) {
+                ((ViewStub) emergencyViewStub).inflate();
+            }
+            mNetworkController.addSignalCallback(new NetworkController.SignalCallback() {
+                @Override
+                public void setIsAirplaneMode(NetworkController.IconState icon) {
+                    recomputeDisableFlags(true /* animate */);
+                }
+            });
+        } else if (emergencyViewStub != null) {
+            ViewGroup parent = (ViewGroup) emergencyViewStub.getParent();
+            parent.removeView(emergencyViewStub);
+        }
     }
 
     public static void updatePreferences(Context context) {
