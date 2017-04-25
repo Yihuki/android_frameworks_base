@@ -22,7 +22,7 @@
         <item name="android:textSize">160.0dip</item>
         <item name="android:textStyle">normal</item>
         <item name="android:focusable">true</item>
-        <item name="android:fontFamily">x-sst-light</item>
+        <item name="android:fontFamily">x-sst-ultralight</item>
     </style>
     <style name="TimeShadow">
         <item name="android:shadowColor">@color/time_shadow_color</item>
@@ -35,7 +35,7 @@
         <item name="android:textSize">70.0dip</item>
         <item name="android:textStyle">normal</item>
         <item name="android:focusable">true</item>
-        <item name="android:fontFamily">x-sst-light</item>
+        <item name="android:fontFamily">x-sst-ultralight</item>
     </style>
     <style name="somc_style">
         <item name="android:textSize">@dimen/widget_label_font_size</item>
