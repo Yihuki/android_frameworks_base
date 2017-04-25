@@ -275,7 +275,7 @@ public class BatteryMeterDrawable extends Drawable implements
 
     private void updateShowPercent() {
         mShowPercent = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0) == 1;
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 6) == 1;
     }
 
     private int getColorForLevel(int percent) {
